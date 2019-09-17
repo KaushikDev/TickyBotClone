@@ -1,0 +1,284 @@
+:root{
+    --header-background-color : #39375B;
+    --header-text-color : gold;
+    --header-font-size : 1.1em;
+
+    --home-background-color : skyblue;
+    --home-headline-color : #222;
+    --home-headline-font-size : 5em;
+    --home-text-color : #fff;
+    --home-text-font-size : 1.5em;
+    --home-button-background-color : #fff;
+    --home-button-text-color : #222;
+    --home-button-font-size : 2em;
+    --home-animation-background : #fd0;
+
+    --about-background-color : #fff;
+    --about-headline-color : #222;
+    --about-headline-font-size : 2em;
+    --about-text-color : #222;
+    --about-text-font-size : 1.2em;
+
+    --features-background-color : #A2F7B2;
+    --features-headline-color : #222;
+    --features-headline-font-size : 2em;
+    --grid-items-background-color : #fff;
+    --img-holder-background-color : #34435E;
+    --text-holder-background-color : #fff;
+    --text-holder-font-size : 1.2em;
+
+
+    --start-background-color : #fff;
+    --start-button-background-color : #34435E;
+    --start-button-text-color : #fff;
+    --start-button-font-size : 2em;
+    --start-para-font-size : 1.1em;
+
+    --footer-background-color : #34435E;
+    --footer-font-size : 0.75em;
+    --footer-text-color : #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Header CSS */
+header{
+    background: var(--header-background-color);
+    padding: 10px;
+    font-size: var(--header-font-size);
+    height: 5.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-class{
+    margin: 10px;
+    text-decoration: none;
+    color: var(--header-text-color);
+}
+
+/* Home CSS */
+#home-section{
+    background: var(--home-background-color);
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section-margin{
+    margin: 50px;
+}
+#home-section-details{
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-items-margin{
+    margin: 15px;
+}
+
+#home-title{
+    color: var(--home-headline-color);
+    font-size: var(--home-headline-font-size);
+}
+
+#home-text{
+    color: var(--home-text-color);
+    font-size: var(--home-text-font-size);
+    text-align: center;
+}
+
+#home-button{
+    background: var(--home-button-background-color);
+    text-decoration: none;
+    padding: 15px 40px;
+    color: var(--home-button-text-color);
+    font-size: var(--home-button-font-size);
+    border-radius: 5px;
+}
+
+#home-section-animation{
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #bot{
+   background: var(--home-animation-background);
+   width: 400px;
+   height: 400px;
+   border-radius: 50%;
+ }
+
+ /* About CSS */
+
+ #about-section{
+     background: var(--about-background-color);
+     height: 50vh;
+     padding: 30px;
+ }
+
+ #about-title{
+     color: var(--about-headline-color);
+     font-size: var(--about-headline-font-size);
+     text-align: center;
+    }
+
+ hr{
+    background: skyblue;
+    border: none;
+    width: 11%;
+    height: 3px;
+    margin-top: 0;
+    margin-left:44.5% !important; margin-right:44.5% !important;
+    margin-bottom: 30px;
+ }
+
+ #first{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .align-first{
+     width: 40%;
+     font-size: var(--about-text-font-size);
+     line-height: 1.5;
+     padding:  50px;
+ }
+
+ #second{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+ }
+
+ .align-second{
+    width: 80%;
+    font-size: var(--about-text-font-size);
+    line-height: 1.5;
+    margin-left: 80px;
+}
+
+/* Features CSS */
+
+#features-section{
+    background: var(--features-background-color);
+    height: 80vh;
+    padding: 30px;
+}
+
+#features-title{
+    color: var(--features-headline-color);
+    font-size: var(--features-headline-font-size);
+    text-align: center;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(1, 475px);
+    gap: 30px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.grid-items{
+    background: var(--grid-items-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.img-holder{
+    background: var(--img-holder-background-color);
+    height: 80%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    
+}
+img{
+    margin: 70px;
+    max-width: 100%;
+}
+
+.text-holder{
+    background: var(--text-holder-background-color);
+    max-width: 100%;
+    height: 20%;
+    padding: 20px;
+    font-size: var(--text-holder-font-size);
+    text-align: center;
+}
+
+
+/*  Start CSS */
+#start-section{
+    background: var(--start-background-color);
+    height: 60vh;
+    padding: 30px;
+}
+
+#start-title{
+    color: var(--features-headline-color);
+    font-size: var(--features-headline-font-size);
+    text-align: center;
+}
+
+#start-desc{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.start-items{
+margin: 40px;
+}
+
+#start-button{
+    background: var(--start-button-background-color);
+    text-decoration: none;
+    padding: 15px 40px;
+    color: var(--start-button-text-color);
+    font-size: var(--start-button-font-size);
+    border-radius: 5px;
+}
+
+.start-para{
+    font-size: var(--start-para-font-size);
+}
+
+/* Footer CSS */
+footer{
+    background: var(--footer-background-color);
+    padding: 10px;
+    font-size: var(--footer-font-size);
+    color: var(--footer-text-color);
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
