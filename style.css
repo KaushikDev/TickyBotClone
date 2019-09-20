@@ -11,6 +11,7 @@
     --home-button-background-color : #fff;
     --home-button-text-color : #222;
     --home-button-font-size : 2em;
+    --font-awesome-icon-color : linear-gradient(90deg, green, skyblue, yellow, red);
     --home-animation-background : #fd0;
 
     --about-background-color : #fff;
@@ -71,18 +72,18 @@ header{
     height: 75vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .home-section-margin{
-    margin: 50px;
+    max-width: 35%;
+    margin: 150px;
 }
 #home-section-details{
-    max-width: 35%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -109,22 +110,27 @@ header{
     color: var(--home-button-text-color);
     font-size: var(--home-button-font-size);
     border-radius: 5px;
-}
+  }
+
+  .fab{
+      margin: 0 10px;
+  }
 
 #home-section-animation{
-    max-width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
  }
 
- #bot{
+ /* Bot CSS has been added as a separate file */
+ 
+ /* #bot{
    background: var(--home-animation-background);
    width: 400px;
    height: 400px;
    border-radius: 50%;
- }
+ } */
 
  /* About CSS */
 
@@ -294,3 +300,4 @@ footer{
 footer > p > a{
     color: var(--footer-text-color);
 }
+
