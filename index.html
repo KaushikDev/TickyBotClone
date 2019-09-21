@@ -18,7 +18,7 @@
         <a class="header-class" href="#home-section">Home</a>
         <a class="header-class" href="#about-section">About</a>
         <a class="header-class" href="#features-section">Features</a>
-        <a class="header-class" href="https://slack.com/signin">Add to Slack</a>
+        <a class="header-class" href="https://slack.com/signin"  target="_blank">Add to Slack</a>
     </header>
 
     <section id="home-section">
@@ -29,8 +29,9 @@
             <p class="detail-items-margin" id="home-text">
                 Let your team manage their support tickets 100% inside Slack
             </p>
-            <a class="detail-items-margin" id="home-button" href="https://slack.com/signin" type="button">
-                <i class="fab fa-slack-hash"></i> Add to <strong>Slack</strong>
+            <a class="detail-items-margin" id="home-button" href="https://slack.com/signin" type="button"  target="_blank">
+                <!-- <i class="fab fa-slack-hash"></i> Add to <strong>Slack</strong> -->
+                <img src="images/icon.svg" alt="icon-image"> Add to <strong>Slack</strong>
             </a>
         </div>
         <div id="home-section-animation" class="home-section-margin">
@@ -130,7 +131,7 @@
                 </div>
                 <div class="text-holder">
                     <p>You can add <strong>Ticky</strong>Bot to your Slack workplace by scrolling down or <a
-                            href="https://slack.com/signin">clicking here</a></p>
+                            href="https://slack.com/signin" target="_blank">clicking here</a></p>
                 </div>
             </div>
             <div class="grid-items">
@@ -164,8 +165,8 @@
                 <strong>Ticky</strong>Bot allows Slack teams to manage their support tickets 100% inside Slack, without
                 having to switch between different apps.
             </p>
-            <a class="start-items" id="start-button" href="https://slack.com/signin" type="button">
-                <i class="fab fa-slack-hash"></i>  Add to <strong>Slack</strong>
+            <a class="start-items" id="start-button" href="https://slack.com/signin" type="button"  target="_blank">
+                <img src="images/icon.svg" alt="icon-image"> Add to <strong>Slack</strong>
             </a>
             <p class="start-items start-para" id="desc-para2">
                 ... so you don't need to go back and forth with another app.
@@ -180,13 +181,43 @@
         <p class="footer-class">The app is not created by, affiliated with, or supported by Slack Technologies, Inc.</p>
     </footer>
    
-    <div class="back-to-top" onclick="function scroll()"> 
+    <a id="back-to-top-btn" class="back-to-top hide"> 
         <i class="fas fa-angle-up"></i>
         <p><strong>TOP</strong></p>
-    </div>
+    </a>
 
 
 
 </body>
+<script>
+const scrollToTopBtn = document.getElementById("back-to-top-btn");
 
+function checkScroll(){
+    let y = window.scrollY;
+
+    if(y>500){
+        scrollToTopBtn.className = "back-to-top show";
+    }
+    else {
+        scrollToTopBtn.className = "back-to-top hide";
+    }
+}
+
+window.addEventListener("scroll", checkScroll);
+
+function takeMeToTheTop(){
+    //c is number of pixels we are from the top
+    const c = document.documentElement.scrollTop || document.body.scrollTop ;
+
+    if(c > 0){
+        window.requestAnimationFrame(takeMeToTheTop);
+        window.scrollTo(0, c-c/50); //the y coordinate controls the speed of scrolling back to top
+    }
+}
+
+scrollToTopBtn.onclick =  function(e){
+    e.preventDefault();
+    takeMeToTheTop();
+}
+</script>
 </html>

@@ -47,6 +47,7 @@
     --footer-text-color : #fff;
 
     --back-top-background : #FFD05B;
+    --back-top-color : #34435E;
     --back-top-font-size : 1.3em;
 }
 
@@ -61,7 +62,7 @@ header{
     background: var(--header-background-color);
     padding: 10px;
     font-size: var(--header-font-size);
-    height: 5.5vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -118,7 +119,15 @@ header{
     color: var(--home-button-text-color);
     font-size: var(--home-button-font-size);
     border-radius: 5px;
+    justify-content: center;
+    align-items: center;
   }
+
+  #home-button > img{
+      padding: 0;
+      margin: 0;
+      width : 30px;
+    }
 
   .fab{
       margin: 0 10px;
@@ -291,6 +300,12 @@ margin: 40px;
     border-radius: 5px;
 }
 
+#start-button > img{
+    padding: 0;
+    margin: 0;
+    width : 30px;
+  }
+
 .start-para{
     font-size: var(--start-para-font-size);
 }
@@ -316,7 +331,9 @@ footer > p > a{
 /* Back To Top CSS */
 
 .back-to-top{
+transition : all 0.25s ease-in-out;
 background: var(--back-top-background);
+color : var(--back-top-color);
 position: fixed;
 width: 50px;
 height: 50px;
@@ -329,7 +346,21 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 font-size: var(--back-top-font-size);
+text-decoration: none;
 }
+
+.hide{
+    visibility: hidden;
+    opacity : 0;
+}
+
+.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
 
 
 /* Media Queries */

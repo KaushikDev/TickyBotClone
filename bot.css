@@ -152,7 +152,7 @@
    top: 47%;
    left : 50%;
    transform: translate(-50%, -50%);
-   border-radius : 25px 25px 40px 40px;
+   border-radius : 25px 25px 30px 30px;
    display: block;
    z-index: 0;
  }
