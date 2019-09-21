@@ -1,7 +1,7 @@
 :root{
-    --header-background-color : #39375B;
+    --header-background-color : #34435E;
     --header-text-color : gold;
-    --header-font-size : 1.1em;
+    --header-font-size : 1.3em;
 
     --home-background-color : skyblue;
     --home-headline-color : #222;
@@ -27,6 +27,11 @@
     --img-holder-background-color : #34435E;
     --text-holder-background-color : #fff;
     --text-holder-font-size : 1.2em;
+    --span-text-color : #f00;
+    --span-background-color : #eee;
+    --span-font-size : 1em;
+    --span-font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
 
     --start-background-color : #fff;
@@ -40,6 +45,9 @@
     --footer-background-color : #34435E;
     --footer-font-size : 0.8em;
     --footer-text-color : #fff;
+
+    --back-top-background : #FFD05B;
+    --back-top-font-size : 1.3em;
 }
 
 *{
@@ -205,7 +213,6 @@ header{
     grid-template-columns: repeat(3, 350px);
     grid-template-rows: repeat(1, 475px);
     gap: 30px;
-    /* align-items: center; */
     justify-content: center;
     margin-top: 50px;
 }
@@ -241,7 +248,12 @@ img{
     text-align: center;
 }
 
-
+span{
+    background: var(--span-background-color);
+    color : var(--span-text-color);
+    font-size: var(--span-font-size);
+    font-family: var(--span-font-family);
+}
 /*  Start CSS */
 #start-section{
     background: var(--start-background-color);
@@ -301,3 +313,28 @@ footer > p > a{
     color: var(--footer-text-color);
 }
 
+/* Back To Top CSS */
+
+.back-to-top{
+background: var(--back-top-background);
+position: fixed;
+width: 50px;
+height: 50px;
+border-radius: 5px;
+bottom : 20px;
+right: 20px;
+font-weight: 100;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: var(--back-top-font-size);
+}
+
+
+/* Media Queries */
+/* For Screen Sizes 300px-728px */
+
+@media screen and (min-width: 300px) and (max-width: 728px){
+
+}
