@@ -449,6 +449,7 @@ header{
     justify-content: center;
     align-items: center;
     padding: 150px;
+    white-space : nowrap;
  }
 
  #bot{
@@ -461,17 +462,7 @@ header{
     transform: scale(0.8);
   }
 
-  #base{
-    position : absolute;
-     background: orange;
-     width: 400px;
-     height: 50px;
-     border-radius: 0 0 50% 50%;
-     top : 98%;
-     left: 50%;
-     transform : translate(-50%, -50%) scale(0.8);
-   
- }
+ 
 
   /* About CSS */
 
