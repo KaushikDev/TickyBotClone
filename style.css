@@ -449,7 +449,6 @@ header{
     justify-content: center;
     align-items: center;
     padding: 150px;
-    white-space : nowrap;
  }
 
  #bot{
@@ -459,6 +458,7 @@ header{
     border-radius: 50%;
     position : absolute;
     overflow : hidden;
+    white-space : nowrap;
     transform: scale(0.8);
   }
 
@@ -535,8 +535,8 @@ hr{
 
 #grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: repeat(1, 475px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    grid-template-rows: repeat(auto-fit, minmax(475px, max-content));
     gap: 30px;
     justify-content: center;
     margin-top: 50px;
@@ -683,3 +683,263 @@ text-decoration: none;
 
 
 /* For Screen Sizes 729px-1024px */
+
+@media screen and (min-width:729px) and (max-width:1919px){
+
+/* Home CSS */
+#home-section{
+    background: var(--home-background-color);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.home-section-margin{
+    /* max-width: 35%; */
+    margin: 10%;
+ 
+}
+#home-section-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.detail-items-margin{
+    margin: 10px;
+}
+
+#home-title{
+    color: var(--home-headline-color);
+    font-size: var(--home-headline-font-size);
+    font-weight: 500;
+}
+
+#home-text{
+    color: var(--home-text-color);
+    font-size: var(--home-text-font-size);
+    text-align: center;
+}
+
+#home-button{
+    background: var(--home-button-background-color);
+    text-decoration: none;
+    padding: 15px 40px;
+    color: var(--home-button-text-color);
+    font-size: 1.3em;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home-button > img{
+      padding: 0;
+      margin: 0;
+      width : 20px;
+    }
+
+  .fab{
+      margin: 0 10px;
+  }
+
+#home-section-animation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ #bot{
+    background: #FFD05B;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position : absolute;
+    overflow:hidden;
+    transform: scale(0.7);
+  }
+/* About CSS */
+
+#about-section{
+    background: var(--about-background-color);
+    height: auto;
+    padding: 30px;
+}
+
+#about-title{
+    color: var(--about-headline-color);
+    font-size: var(--about-headline-font-size);
+    font-weight: 300;
+    text-align: center;
+   }
+
+hr{
+   background: skyblue;
+   border: none;
+   width: 20%;
+   height: 3px;
+   margin-top: 0;
+   margin-left:40% !important; margin-right:40% !important;
+   margin-bottom: 10px;
+}
+
+#first{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-first{
+    width: 40%;
+    font-size: var(--about-text-font-size);
+    line-height: 1.5;
+    padding:  30px;
+}
+
+#second{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+.align-second{
+   width: 90%;
+   font-size: var(--about-text-font-size);
+   line-height: 1.5;
+   margin-left: 30px;
+}
+
+/* Features CSS */
+#features-section{
+    background: var(--features-background-color);
+    height: auto;
+    padding: 30px;
+}
+
+#features-title{
+    color: var(--features-headline-color);
+    font-size: var(--features-headline-font-size);
+    font-weight: 300;
+    text-align: center;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    grid-template-rows: repeat(auto-fit, minmax(475px, max-content));
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.grid-items{
+    background: var(--grid-items-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.img-holder{
+    background: var(--img-holder-background-color);
+    height: 80%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    
+}
+img{
+    margin: 70px;
+    max-width: 100%;
+}
+
+.text-holder{
+    background: var(--text-holder-background-color);
+    max-width: 100%;
+    height: 20%;
+    padding: 20px;
+    font-size: var(--text-holder-font-size);
+    text-align: center;
+}
+
+span{
+    background: var(--span-background-color);
+    color : var(--span-text-color);
+    font-size: var(--span-font-size);
+    font-family: var(--span-font-family);
+}
+
+/*  Start CSS */
+#start-section{
+    background: var(--start-background-color);
+    height:auto;
+    padding: 30px;
+}
+
+#start-title{
+    color: var(--start-headline-color);
+    font-size: var(--start-headline-font-size);
+    font-weight: 300;
+    text-align: center;
+}
+
+#start-desc{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.start-items{
+margin: 40px;
+}
+
+#start-button{
+    background: var(--start-button-background-color);
+    text-decoration: none;
+    padding: 15px 40px;
+    color: var(--start-button-text-color);
+    font-size: var(--start-button-font-size);
+    border-radius: 5px;
+}
+
+#start-button > img{
+    padding: 0;
+    margin: 0;
+    width : 30px;
+  }
+
+.start-para{
+    font-size: var(--start-para-font-size);
+    line-height: 1.5;
+}
+
+/* Footer CSS */
+footer{
+    background: var(--footer-background-color);
+    padding: 10px;
+    font-size: var(--footer-font-size);
+    color: var(--footer-text-color);
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+
+footer > p > a{
+    color: var(--footer-text-color);
+}
+
+}
