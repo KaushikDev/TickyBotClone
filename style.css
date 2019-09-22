@@ -684,7 +684,7 @@ text-decoration: none;
 
 /* For Screen Sizes 729px-1024px */
 
-@media screen and (min-width:729px) and (max-width:1919px){
+@media screen and (min-width:729px) and (max-width:1200px){
 
 /* Home CSS */
 #home-section{
