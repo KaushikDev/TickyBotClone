@@ -1,0 +1,55 @@
+.home-title-animation{
+    opacity: 0;
+    animation: home-title 1s linear 1.2s 1 forwards;
+}
+
+.home-para-animation{
+    opacity: 0;
+    animation: home-para 1s linear 1.5s 1 forwards;
+}
+
+.home-button-animation{
+    opacity: 0;
+    animation: home-button 1s linear 1.8s 1 forwards;
+}
+
+.bot-animation{
+    opacity: 0;
+    animation: bot 1s linear 2.1s 1 forwards;
+}
+
+.about-title-animation{
+    opacity: 0;
+    animation: about-title 1s linear 2.4s 1 forwards;
+}
+/* Home title */
+
+@keyframes home-title{
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes home-para{
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes home-button{
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes bot{
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes about-title{
+    100%{
+        opacity: 1;
+    }
+}

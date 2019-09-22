@@ -104,6 +104,7 @@ header{
     color: var(--home-headline-color);
     font-size: var(--home-headline-font-size);
     font-weight: 500;
+     
 }
 
 #home-text{
@@ -360,6 +361,7 @@ text-decoration: none;
 }
 
 
+/* ANIMATIONS CSS is attached as separate stylesheet */
 
 
 
