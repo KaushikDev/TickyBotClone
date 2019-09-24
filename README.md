@@ -4,7 +4,7 @@
 ## Overview
 This is a TickyBot clone page made for pre-work phase of Chingu's Voyage-12.
 
-**Live link can be reached at : ** https://kaushikdev.github.io/TickyBotClone/
+**Live app link :** https://kaushikdev.github.io/TickyBotClone/
 
 
 ## Features
